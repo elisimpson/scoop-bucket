@@ -1,0 +1,52 @@
+{
+    "version": "6.19.10858",
+    "description": "Freeware system optimization tool that removes unused and temporary files",
+    "homepage": "https://www.ccleaner.com/ccleaner",
+    "license": "Freeware",
+    "url": "https://download.ccleaner.com/portable/ccsetup619.zip",
+    "hash": "745c601be43e4459c05427be3b2a4f5f3638b081a3fc14df30369d67122e2b36",
+    "pre_install": [
+        "if (!(Test-Path $persist_dir\\ccleaner.ini)) {",
+        "  Set-Content $dir\\ccleaner.ini @('[Options]', 'UpdateAuto=0', 'UpdateNotify=0', 'UpdateCheck=0', 'HelpImproveCCleaner=0') -Encoding ASCII }",
+        "'winapp.ini', 'winreg.ini', 'winsys.ini' | ForEach-Object {",
+        "  if (!(Test-Path $persist_dir\\$_)) { New-Item $dir\\$_ | Out-Null } }",
+        "Remove-Item $dir\\Lang -Recurse"
+    ],
+    "architecture": {
+        "64bit": {
+            "post_install": [
+                "Remove-Item $dir\\CCleaner.exe, $dir\\x86 -Recurse"
+            ],
+            "shortcuts": [
+                [
+                    "CCleaner64.exe",
+                    "CCleaner"
+                ]
+            ]
+        },
+        "32bit": {
+            "post_install": [
+                "Remove-Item $dir\\CCleaner64.exe, $dir\\x64 -Recurse"
+            ],
+            "shortcuts": [
+                [
+                    "CCleaner.exe",
+                    "CCleaner"
+                ]
+            ]
+        }
+    },
+    "persist": [
+        "ccleaner.ini",
+        "winapp.ini",
+        "winreg.ini",
+        "winsys.ini"
+    ],
+    "checkver": {
+        "url": "https://www.ccleaner.com/ccleaner/builds",
+        "regex": "CCleaner Free \\(v([\\d.]+)\\) - Latest official release"
+    },
+    "autoupdate": {
+        "url": "https://download.ccleaner.com/portable/ccsetup$majorVersion$minorVersion.zip"
+    }
+}
