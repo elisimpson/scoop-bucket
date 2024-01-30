@@ -18,7 +18,7 @@
         "  Start-Sleep -Seconds 5",
         "}",
         "Remove-Item $dir\\mame.sym",
-		"Get-ChildItem $dir\\language -Exclude English, LICENSE, README.md | Remove-Item -Recurse"
+        "Get-ChildItem $dir\\language -Exclude English, LICENSE, README.md | Remove-Item -Recurse"
     ],
     "bin": "mame.exe",
     "shortcuts": [
