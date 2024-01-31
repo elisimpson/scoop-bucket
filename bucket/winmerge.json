@@ -1,0 +1,40 @@
+{
+    "version": "2.16.38",
+    "description": "Differencing and merging tool",
+    "homepage": "https://winmerge.org",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.38/winmerge-2.16.38-x64-exe.zip",
+            "hash": "67e8e0ab2b37ac4e9b5e4e80e1f38568ae8c20c16946823b6d16b9f36dc51b55"
+        },
+        "arm64": {
+            "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.38/winmerge-2.16.38-ARM64-exe.zip",
+            "hash": "82aec9d6f27ba0f555dab260bc4ac162b6997582a47282497a5f6afadd1a86ea"
+        }
+    },
+    "extract_dir": "WinMerge",
+    "pre_install": "'Languages', 'COPYING', 'ReadMe.txt' | ForEach-Object { Remove-Item $dir\\$_ -Recurse }",
+    "bin": "WinMergeU.exe",
+    "shortcuts": [
+        [
+            "WinMergeU.exe",
+            "WinMerge"
+        ]
+    ],
+    "checkver": "WinMerge ([\\d.]+) - latest stable version",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-x64-exe.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-ARM64-exe.zip"
+            }
+        },
+        "hash": {
+            "url": "https://winmerge.org/downloads",
+            "regex": "(?sm)<dt>$basename</dt>.*?<dd><code>$sha256</code></dd>"
+        }
+    }
+}
