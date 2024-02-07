@@ -1,0 +1,36 @@
+{
+    "version": "2.6.6",
+    "description": "Nintendo NES and Famicom emulator",
+    "homepage": "https://github.com/TASEmulators/fceux",
+    "license": "GPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/TASEmulators/fceux/releases/download/v2.6.6/fceux-2.6.6-win64.zip",
+            "hash": "bc8f7e420ebf512615bc8bbc5b8beea655ea1feaf474742a2f56b35fd0415aee",
+            "bin": "fceux64.exe",
+            "shortcuts": [
+                [
+                    "fceux64.exe",
+                    "FCEUX"
+                ]
+            ]
+        }
+    },
+    "pre_install": "if (!(Test-Path $persist_dir\\fceux.cfg)) { New-Item $dir\\fceux.cfg | Out-Null }",
+    "persist": [
+        "cheats",
+        "fcs",
+        "movies",
+        "sav",
+        "snaps",
+        "fceux.cfg"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/TASEmulators/fceux/releases/download/v$version/fceux-$version-win64.zip"
+            }
+        }
+    }
+}
