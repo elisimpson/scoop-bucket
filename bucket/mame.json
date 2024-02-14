@@ -28,6 +28,7 @@
         ]
     ],
     "persist": [
+        "bgfx\\chains\\_CUSTOM",
         "cfg",
         "folders",
         "ini_",
