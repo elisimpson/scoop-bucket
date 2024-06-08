@@ -1,0 +1,32 @@
+{
+    "version": "8.02-5440",
+    "description": "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS",
+    "homepage": "https://www.hwinfo.com",
+    "license": "Freeware",
+    "url": "https://www.fosshub.com/HWiNFO.html/hwi_802.zip",
+    "hash": "d03502ba1216fa202aed1a0a5d031bf0a881f16a658a8aa6a3ad21c5f5f7999e",
+    "pre_install": [
+        "$manifest.persist | ForEach-Object { if (!(Test-Path $persist_dir\\$_)) { New-Item $dir\\$_ | Out-Null } }",
+        "Remove-Item $dir\\HWiNFO32.exe"
+    ],
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "HWiNFO64.exe",
+                    "HWiNFO"
+                ]
+            ]
+        }
+    },
+    "persist": [
+        "HWiNFO64.INI"
+    ],
+    "checkver": {
+        "url": "https://www.hwinfo.com/ver.txt",
+        "regex": "([\\d-.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.fosshub.com/HWiNFO.html/hwi_$majorVersion$minorVersion.zip"
+    }
+}
