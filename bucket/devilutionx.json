@@ -1,0 +1,23 @@
+{
+    "version": "1.5.2",
+    "description": "Diablo build for modern operating systems",
+    "homepage": "https://github.com/diasurgical/devilutionX",
+    "license": "https://github.com/diasurgical/devilutionX?tab=License-1-ov-file#readme",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/diasurgical/devilutionX/releases/download/1.5.2/devilutionx-windows-x86_64.zip",
+            "hash": "49F468699FF9EF4FC3958E05E7ED620FD99F678240B4C51E92A0226F45F7B3A1"
+        }
+    },
+    "extract_dir": "devilutionx",
+    "shortcuts": [
+        [
+            "devilutionx.exe",
+            "DevilutionX"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/diasurgical/devilutionX/releases/download/$version/devilutionx-windows-x86_64.zip"
+    }
+}
