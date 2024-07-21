@@ -1,10 +1,10 @@
 {
-    "version": "3.51",
+    "version": "3.52",
     "description": "A/V processing software with focus on new generation HD formats, Blu-ray and HD DVD",
     "homepage": "https://www.videohelp.com/software/eac3to",
     "license": "Freeware",
-    "url": "https://www.videohelp.com/download/eac3to_3.51.rar",
-    "hash": "97528548373953dc893ac8d620626530ce34aecf5eb0e812adaf4d6e93289f32",
+    "url": "https://www.videohelp.com/download/eac3to_3.52.rar",
+    "hash": "27e7c5990b60a3b9a6969712888c64886bfd578f114675e49f92aaf912b17e34",
     "bin": "eac3to.exe",
     "checkver": "Download eac3to ([\\d.]+)",
     "autoupdate": {
