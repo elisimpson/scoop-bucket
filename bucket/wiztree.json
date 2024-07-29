@@ -7,7 +7,7 @@
         "url": "https://www.diskanalyzer.com/eula"
     },
     "url": "https://www.diskanalyzer.com/files/wiztree_4_20_portable.zip",
-    "hash": "bfa584a66823aabd14ea94d6e85ad2ad3bb25098848bcb167391603dc1e215dc",
+    "hash": "8E336D7AC8D4028CAB6BF552BD63FA12277694DEB575F8FD3D4B585EB6B84CCB",
     "pre_install": [
         "Remove-Item $dir\\WizTree.exe",
         "Get-ChildItem $dir\\locale -Exclude en | Remove-Item -Recurse",
