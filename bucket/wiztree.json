@@ -1,13 +1,13 @@
 {
-    "version": "4.20",
+    "version": "4.21",
     "description": "High speed disk space analyser",
     "homepage": "https://www.diskanalyzer.com",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.diskanalyzer.com/eula"
     },
-    "url": "https://www.diskanalyzer.com/files/wiztree_4_20_portable.zip",
-    "hash": "8E336D7AC8D4028CAB6BF552BD63FA12277694DEB575F8FD3D4B585EB6B84CCB",
+    "url": "https://www.diskanalyzer.com/files/wiztree_4_21_portable.zip",
+    "hash": "9983941e7b45663539b88c562de54fa32f5df1ff47bc9f762f2306af900f97f7",
     "pre_install": [
         "Remove-Item $dir\\WizTree.exe",
         "Get-ChildItem $dir\\locale -Exclude en | Remove-Item -Recurse",
