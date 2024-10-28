@@ -1,16 +1,16 @@
 {
-    "version": "2.16.42.1",
+    "version": "2.16.44",
     "description": "Differencing and merging tool",
     "homepage": "https://winmerge.org",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.42.1/winmerge-2.16.42.1-x64-exe.zip",
-            "hash": "4051c4ba9c87cba7b82a4f708e242dc608a9ec1889782f015e7b39b42758100b"
+            "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.44/winmerge-2.16.44-x64-exe.zip",
+            "hash": "99010ce4dc510f567164c7b46af4b3b9bf8dbc92b3e73009bc5380b676577c07"
         },
         "arm64": {
-            "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.42.1/winmerge-2.16.42.1-ARM64-exe.zip",
-            "hash": "3414464d2cbbb0a458d54076d2d36c1abedee531b60139e293645fc7b5dab3f6"
+            "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.44/winmerge-2.16.44-ARM64-exe.zip",
+            "hash": "90fe3660ba4943fd8002fdde3382e12a236056f6ec8a72017cc2fafc6cdff57e"
         }
     },
     "extract_dir": "WinMerge",
