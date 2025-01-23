@@ -5,14 +5,9 @@
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/projects/vice-emu/files/releases/binaries/windows/GTK3VICE-3.8-win64.zip",
+            "url": "https://sourceforge.net/projects/vice-emu/files/releases/binaries/windows/GTK3VICE-3.8-win64.zip",
             "hash": "sha1:3160abb643739e4620e2bf853775285c7208cf54",
             "extract_dir": "GTK3VICE-3.8-win64"
-        },
-        "32bit": {
-            "url": "https://downloads.sourceforge.net/projects/vice-emu/files/releases/binaries/windows/GTK3VICE-3.8-win32.zip",
-            "hash": "sha1:35a06926eee91aabc42bc8f6b0d6d4744f96b205",
-            "extract_dir": "GTK3VICE-3.8-win32"
         }
     },
     "shortcuts": [
@@ -36,12 +31,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/projects/vice-emu/files/releases/binaries/windows/GTK3VICE-$version-win64.zip",
+                "url": "https://sourceforge.net/projects/vice-emu/files/releases/binaries/windows/GTK3VICE-$version-win64.zip",
                 "extract_dir": "GTK3VICE-$version-win64"
-            },
-            "32bit": {
-                "url": "https://downloads.sourceforge.net/projects/vice-emu/files/releases/binaries/windows/GTK3VICE-$version-win32.zip",
-                "extract_dir": "GTK3VICE-$version-win32"
             }
         }
     }
