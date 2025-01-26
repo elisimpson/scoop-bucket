@@ -24,16 +24,6 @@
                 ]
             ]
         },
-        "32bit": {
-            "pre_install": "Remove-Item $dir\\*64.exe, $dir\\*64a.exe",
-            "bin": "Autorunsc.exe",
-            "shortcuts": [
-                [
-                    "Autoruns.exe",
-                    "Autoruns"
-                ]
-            ]
-        },
         "arm64": {
             "pre_install": "Remove-Item $dir\\Autoruns.exe, $dir\\Autorunsc.exe, $dir\\*64.exe",
             "bin": [
