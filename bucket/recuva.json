@@ -14,15 +14,6 @@
                     "Recuva"
                 ]
             ]
-        },
-        "32bit": {
-            "post_install": "Remove-Item $dir\\recuva64.exe, $dir\\RecuvaShell64.dll.new",
-            "shortcuts": [
-                [
-                    "recuva.exe",
-                    "Recuva"
-                ]
-            ]
         }
     },
     "pre_install": [
