@@ -14,15 +14,6 @@
                     "CPU-Z"
                 ]
             ]
-        },
-        "32bit": {
-            "pre_install": "Remove-Item $dir\\cpuz_x64.exe",
-            "shortcuts": [
-                [
-                    "cpuz_x32.exe",
-                    "CPU-Z"
-                ]
-            ]
         }
     },
     "checkver": "Version ([\\d.]+) for windows",
