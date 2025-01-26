@@ -21,15 +21,6 @@
                     "CCleaner"
                 ]
             ]
-        },
-        "32bit": {
-            "post_install": "Remove-Item $dir\\CCleaner64.exe, $dir\\x64 -Recurse",
-            "shortcuts": [
-                [
-                    "CCleaner.exe",
-                    "CCleaner"
-                ]
-            ]
         }
     },
     "persist": [
