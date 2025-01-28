@@ -1,0 +1,43 @@
+{
+    "version": "9.5.0",
+    "description": "A HDD/SSD utility software which supports a part of USB, RAID and NVMe",
+    "homepage": "https://crystalmark.info/en/software/crystaldiskinfo/",
+    "license": "MIT",
+    "url": "https://sourceforge.net/projects/crystaldiskinfo/files/9.5.0/CrystalDiskInfo9_5_0.zip",
+    "hash": "sha1:5f8b84576620def25f148fe95bd5cb97afa2c52c",
+    "architecture": {
+        "64bit": {
+            "post_install": "Remove-Item $dir\\DiskInfo32.exe, $dir\\DiskInfoA64.exe",
+            "shortcuts": [
+                [
+                    "DiskInfo64.exe",
+                    "CrystalDiskInfo"
+                ]
+            ]
+        },
+        "arm64": {
+            "post_install": "Remove-Item $dir\\DiskInfo32.exe, $dir\\DiskInfo64.exe",
+            "shortcuts": [
+                [
+                    "DiskInfoA64.exe",
+                    "CrystalDiskInfo"
+                ]
+            ]
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path $persist_dir\\DiskInfo.ini)) { New-Item $dir\\DiskInfo.ini | Out-Null }",
+        "Get-ChildItem $dir\\CdiResource\\language -Exclude English* | Remove-Item"
+    ],
+    "persist": [
+        "Smart",
+        "DiskInfo.ini"
+    ],
+    "checkver": {
+        "sourceforge": "crystaldiskinfo",
+        "regex": "((\\d+\\.)(\\d+\\.)(\\d+))/CrystalDiskInfo.*.zip"
+    },
+    "autoupdate": {
+        "url": "https://sourceforge.net/projects/crystaldiskinfo/files/$version/CrystalDiskInfo$underscoreVersion.zip"
+    }
+}
