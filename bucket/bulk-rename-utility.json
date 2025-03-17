@@ -1,5 +1,5 @@
 {
-    "version": "3",
+    "version": "4.0.0.6",
     "description": "Rename files and folders based upon flexible criteria",
     "homepage": "https://www.bulkrenameutility.co.uk",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "http://www.s3.tgrmn.com/bru/BRU_NoInstall.zip",
-            "hash": "81d1892ffe342bea788da1b79cbe084b8b3a533df33d697c7721d97eaf7ba3d6"
+            "url": "https://www.bulkrenameutility.co.uk/Downloads/BRU_NoInstall.zip",
+            "hash": "cab1351aa13872331ef7729e19646a48245ae9d07f70ebe70cdd9540cb013355"
         }
     },
     "pre_install": "'64-bit', 'All' | ForEach-Object { Get-ChildItem $dir\\$_ -Recurse | Move-Item -Destination $dir }",
@@ -23,9 +23,9 @@
     "persist": "Bulk Rename Utility.ini",
     "checkver": {
         "url": "https://www.bulkrenameutility.co.uk/Download.php",
-        "regex": "version ([\\d.]+)"
+        "regex": "version ([\\d.]+) </span>"
     },
     "autoupdate": {
-        "url": "http://www.s3.tgrmn.com/bru/BRU_NoInstall.zip"
+        "url": "https://www.bulkrenameutility.co.uk/Downloads/BRU_NoInstall.zip"
     }
 }
