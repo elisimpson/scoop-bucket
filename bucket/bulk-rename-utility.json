@@ -1,5 +1,5 @@
 {
-    "version": "4.0.0.7",
+    "version": "4.0.0.8",
     "description": "Rename files and folders based upon flexible criteria",
     "homepage": "https://www.bulkrenameutility.co.uk",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.bulkrenameutility.co.uk/Downloads/BRU_NoInstall.zip",
-            "hash": "3a1953db2db77baa74e1939a81f8aaac414fb48e061892114a13e788457b4292"
+            "hash": "4a7879879186b3c70506779fc1f534c50b96f672b479327bb5f164649f547d6c"
         }
     },
     "pre_install": "'64-bit', 'All' | ForEach-Object { Get-ChildItem $dir\\$_ -Recurse | Move-Item -Destination $dir }",
