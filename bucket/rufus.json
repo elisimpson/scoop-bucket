@@ -1,16 +1,16 @@
 {
-    "version": "4.8",
+    "version": "4.9",
     "description": "Format and create bootable USB flash drives",
     "homepage": "https://rufus.ie/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pbatard/rufus/releases/download/v4.8/rufus-4.8.exe#/rufus.exe",
-            "hash": "092b1c10c0240e4ae16f30989c3f06a8e784067a944e4aa3e8a11a75f803d71b"
+            "url": "https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9.exe#/rufus.exe",
+            "hash": "497f796e6d076d4855d697965c04626e6d3624658fce3eca82ab14f7414eede2"
         },
         "arm64": {
-            "url": "https://github.com/pbatard/rufus/releases/download/v4.8/rufus-4.8_arm64.exe#/rufus.exe",
-            "hash": "01420ee7ab4438a93379be61f4652740af6a6a28ad57b5c0da40038d4039445f"
+            "url": "https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9_arm64.exe#/rufus.exe",
+            "hash": "aa2440122f448eec694c681676358e26e1a1605e712caa0c52815d5d26989aa2"
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\rufus.ini\")) { New-Item \"$dir\\rufus.ini\" | Out-Null }",
