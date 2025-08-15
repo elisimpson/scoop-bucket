@@ -1,5 +1,5 @@
 {
-    "version": "3.30",
+    "version": "3.31",
     "description": "Powerful and easy-to-use tool to edit metadata of audio files",
     "homepage": "https://www.mp3tag.de/en/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.mp3tag.de/mp3tagv330-x64-setup.exe#/dl.7z",
-            "hash": "9a7128703a03a334997f8c74efcaa07f3331f6e16ecd1929e626abe9ca98e033"
+            "url": "https://download.mp3tag.de/mp3tagv331-x64-setup.exe#/dl.7z",
+            "hash": "44dc0ad871233df5c3f9649d9fc306094335410c97c938079d50911e69e6078e"
         }
     },
     "pre_install": [
