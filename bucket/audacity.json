@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.5/audacity-win-3.7.5-64bit.zip",
-            "hash": "d1cab9486af0d70a2d6c5821c2381fd66955c0d1e7173dbcf6846b6fd5c672ab",
+            "hash": "0bc382a89cd44ee2df80f9b725fa22a697163572a8aa04899ee8544dc2932926",
             "extract_dir": "audacity-win-3.7.5-64bit"
         }
     },
