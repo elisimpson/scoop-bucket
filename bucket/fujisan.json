@@ -13,6 +13,7 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/pedgarcia/fujisan/releases/download/v$version/Fujisan-v$version-windows.zip"
+        "url": "https://github.com/pedgarcia/fujisan/releases/download/v$version/Fujisan-$version-windows.zip"
     }
 }
+
