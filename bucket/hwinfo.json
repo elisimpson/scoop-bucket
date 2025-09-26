@@ -1,10 +1,10 @@
 {
-    "version": "8.24-5700",
+    "version": "830",
     "description": "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS",
     "homepage": "https://www.hwinfo.com",
     "license": "Freeware",
-    "url": "https://www.fosshub.com/HWiNFO.html/hwi_824.zip",
-    "hash": "74c71b6a8a3498f5a5254b4e692345c45ec5cf88246bf3516cd7c35faf516ca4",
+    "url": "https://downloads.sourceforge.net/project/hwinfo/Windows_Portable/hwi_830.zip",
+    "hash": "sha1:5adce9652936477f5f388910a8154bff9c2458c7",
     "architecture": {
         "64bit": {
             "pre_install": [
@@ -21,10 +21,10 @@
     },
     "persist": "HWiNFO64.INI",
     "checkver": {
-        "url": "https://www.hwinfo.com/ver.txt",
-        "regex": "([\\d-.]+)"
+        "url": "https://sourceforge.net/projects/hwinfo/files/Windows_Portable/",
+        "regex": "hwi_([\\d.]+).zip"
     },
     "autoupdate": {
-        "url": "https://www.fosshub.com/HWiNFO.html/hwi_$majorVersion$minorVersion.zip"
+        "url": "https://downloads.sourceforge.net/project/hwinfo/Windows_Portable/hwi_$version.zip"
     }
 }
