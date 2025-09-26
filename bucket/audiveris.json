@@ -1,25 +1,21 @@
 {
-    "version": "5.4",
+    "version": "5.7.1",
     "description": "Optical Music Recognition (OMR) application",
     "homepage": "https://audiveris.github.io/audiveris/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Audiveris/audiveris/releases/download/v5.4/Audiveris_Setup-5.4-windows-x86_64.exe#/setup.7z",
-    "hash": "112a54f266cf09b037e569ceedeb35e8cbf9595eaf03941a13b1e94d392ce91c",
-    "pre_install": [
-        "Remove-Item $dir\\`$*, $dir\\uninst.exe -Recurse"
-    ],
+    "url": "https://github.com/Audiveris/audiveris/releases/download/5.7.1/Audiveris-5.7.1-windows-x86_64.msi",
+    "hash": "524e5701a3bd0a07d33df84adc5a53062949ca41ef833623c2adde39f7f7cb14",
+    "extract_dir": "Audiveris",
     "shortcuts": [
         [
-            "bin\\Audiveris.bat",
-            "Audiveris",
-            "",
-            "bin\\icon-256.ico"
+            "Audiveris.exe",
+            "Audiveris"
         ]
     ],
     "checkver": {
         "github": "https://github.com/Audiveris/audiveris"
     },
     "autoupdate": {
-        "url": "https://github.com/Audiveris/audiveris/releases/download/v$version/Audiveris_Setup-$version-windows-x86_64.exe#/setup.7z"
+        "url": "https://github.com/Audiveris/audiveris/releases/download/$version/Audiveris-$version-windows-x86_64.msi#/setup.7z"
     }
 }
