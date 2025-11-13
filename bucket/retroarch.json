@@ -11,10 +11,7 @@
         }
     },
     "pre_install": [
-        "if (!(Test-Path $persist_dir\\retroarch.cfg)) { Copy-Item $dir\\retroarch.default.cfg $dir\\retroarch.cfg }",
-        "'favorites', 'history', 'image_history', 'music_history', 'video_history' | ForEach-Object {",
-        "    if (!(Test-Path $persist_dir\\content_$_.lpl)) { New-Item $dir\\content_$_.lpl | Out-Null }",
-        "}"
+        "if (!(Test-Path $persist_dir\\retroarch.cfg)) { Copy-Item $dir\\retroarch.default.cfg $dir\\retroarch.cfg }"
     ],
     "bin": "retroarch.exe",
     "shortcuts": [
@@ -37,11 +34,6 @@
         "states",
         "system",
         "thumbnails",
-        "content_favorites.lpl",
-        "content_history.lpl",
-        "content_image_history.lpl",
-        "content_music_history.lpl",
-        "content_video_history.lpl",
         "retroarch.cfg"
     ],
     "checkver": {
@@ -56,3 +48,4 @@
         }
     }
 }
+
