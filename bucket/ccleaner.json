@@ -1,5 +1,5 @@
 {
-    "version": "6.39.11548",
+    "version": "639",
     "description": "Freeware system optimization tool that removes unused and temporary files",
     "homepage": "https://www.ccleaner.com/ccleaner",
     "license": "Freeware",
@@ -31,9 +31,9 @@
     ],
     "checkver": {
         "url": "https://www.ccleaner.com/ccleaner/builds",
-        "regex": "CCleaner Free \\(v([\\d.]+)\\) - Latest official release"
+        "regex": "https://download.ccleaner.com/portable/ccsetup([\\d.]+).zip"
     },
     "autoupdate": {
-        "url": "https://download.ccleaner.com/portable/ccsetup$majorVersion$minorVersion.zip"
+        "url": "https://download.ccleaner.com/portable/ccsetup$version.zip"
     }
 }
