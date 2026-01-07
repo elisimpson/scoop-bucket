@@ -21,7 +21,8 @@
     ],
     "persist": "profile",
     "checkver": {
-        "sourceforge": "qbittorrent/qbittorrent-win32"
+        "sourceforge": "qbittorrent/qbittorrent-win32",
+        "regex": "qbittorrent_([\\d.]+)_x64_setup\\.exe"
     },
     "autoupdate": {
         "architecture": {
@@ -31,3 +32,4 @@
         }
     }
 }
+
