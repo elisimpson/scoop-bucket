@@ -29,12 +29,6 @@
     ],
     "persist": [
         "bgfx\\chains\\_CUSTOM",
-        "cfg",
-        "folders",
-        "ini_",
-        "nvram",
-        "snap",
-        "ui",
         "mame.ini"
     ],
     "checkver": {
