@@ -1,11 +1,11 @@
 {
     "version": "2.14.0",
     "description": "GUI for mkvextract utility (part of MKVToolNix) which incorporates most functionality of mkvextract and mkvinfo utilities",
-    "homepage": "https://sourceforge.net/projects/gmkvextractgui/",
+    "homepage": "https://github.com/Gpower2/gMKVExtractGUI",
     "license": "Public Domain",
     "depends": "mkvtoolnix",
-    "url": "https://downloads.sourceforge.net/project/gmkvextractgui/v2.14.0/gMKVExtractGUI.v2.14.0.7z",
-    "hash": "sha1:bb6e34fbfdb52a544afc44a853a74ab399ab761a",
+    "url": "https://github.com/Gpower2/gMKVExtractGUI/releases/download/v2.14.0/gMKVExtractGUI.v2.14.0.zip",
+    "hash": "f302e5776e4b8b5bbe37ebc955c75b6e11c0271a52bc0cab53f5ddc9f6fc71c1",
     "shortcuts": [
         [
             "gMKVExtractGUI.exe",
@@ -17,11 +17,8 @@
         "  New-Item -Path $dir -Name gMKVExtractGUI.ini -Value \"MKVToolnix Path:$(versiondir 'mkvtoolnix' 'current' $global)\" | Out-Null }"
     ],
     "persist": "gMKVExtractGUI.ini",
-    "checkver": {
-        "url": "https://sourceforge.net/projects/gmkvextractgui/files/",
-        "regex": "gmkvextractgui/files/v([\\d.]+)"
-    },
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/gmkvextractgui/v$version/gMKVExtractGUI.v$version.7z"
+        "url": "https://github.com/Gpower2/gMKVExtractGUI/releases/download/v$version/gMKVExtractGUI.v$version.zip"
     }
 }
