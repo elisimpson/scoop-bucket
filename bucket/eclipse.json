@@ -35,10 +35,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.eclipse.org/downloads/download.php?r=1&file=/eclipse/downloads/drops$majorVersion/R-$version/eclipse-platform-$matchHead-win32-win32-x86_64.zip",
-                "hash": {
-                    "url": "$baseurl/checksum/$basename.sha512"
-                }
+                "url": "https://www.eclipse.org/downloads/download.php?r=1&file=/eclipse/downloads/drops$majorVersion/R-$version/eclipse-platform-$matchHead-win32-win32-x86_64.zip"
             }
         }
     }
