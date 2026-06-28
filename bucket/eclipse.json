@@ -1,7 +1,7 @@
 {
     "version": "4.39-202602260420",
     "description": "Eclipse Platform Runtime Binary (minimal install)",
-    "homepage": "https://www.eclipse.org",
+    "homepage": "https://eclipseide.org/",
     "license": "EPL-1.0",
     "suggest": {
         "Java": "java/temurin-lts-jre"
@@ -35,7 +35,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://download.eclipse.org/eclipse/downloads/drops$majorVersion/R-$version/eclipse-platform-$matchHead-win32-x86_64.zip",
+                "url": "https://www.eclipse.org/downloads/download.php?r=1&file=/eclipse/downloads/drops$majorVersion/R-$version/eclipse-platform-$matchHead-win32-win32-x86_64.zip",
                 "hash": {
                     "url": "$baseurl/checksum/$basename.sha512"
                 }
