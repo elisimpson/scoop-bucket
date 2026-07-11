@@ -1,11 +1,11 @@
 {
-    "version": "2.14.0",
+    "version": "2.15.0",
     "description": "GUI for mkvextract utility (part of MKVToolNix) which incorporates most functionality of mkvextract and mkvinfo utilities",
     "homepage": "https://github.com/Gpower2/gMKVExtractGUI",
     "license": "Public Domain",
     "depends": "mkvtoolnix",
-    "url": "https://github.com/Gpower2/gMKVExtractGUI/releases/download/v2.14.0/gMKVExtractGUI.v2.14.0.zip",
-    "hash": "f302e5776e4b8b5bbe37ebc955c75b6e11c0271a52bc0cab53f5ddc9f6fc71c1",
+    "url": "https://github.com/Gpower2/gMKVExtractGUI/releases/download/v2.15.0/gMKVExtractGUI.v2.15.0.zip",
+    "hash": "1e032be3652b288ebf339d1760faeb9780cfe2d8e4d3bedfa88ee4b8e4012233",
     "shortcuts": [
         [
             "gMKVExtractGUI.exe",
