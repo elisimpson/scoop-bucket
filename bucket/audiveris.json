@@ -1,10 +1,10 @@
 {
-    "version": "5.10.2",
+    "version": "5.11.0",
     "description": "Optical Music Recognition (OMR) application",
     "homepage": "https://audiveris.github.io/audiveris/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Audiveris/audiveris/releases/download/5.10.2/Audiveris-5.10.2-windows-x86_64.msi",
-    "hash": "f321cbbfce3be0beb292129b76532373877a0586dd784977691b2deddc7d2f84",
+    "url": "https://github.com/Audiveris/audiveris/releases/download/5.11.0/Audiveris-5.11.0-windows-x86_64.msi",
+    "hash": "ac221b0d39a90e32b7f43dbf9f5d5a45ff8b5424076af21b65278955688dac71",
     "extract_dir": "Audiveris",
     "shortcuts": [
         [
