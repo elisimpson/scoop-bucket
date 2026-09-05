@@ -1,5 +1,5 @@
 {
-    "version": "3.7.9",
+    "version": "4.0.0",
     "description": "An easy-to-use, multi-track audio editor and recorder",
     "homepage": "https://www.audacityteam.org",
     "license": {
@@ -8,15 +8,18 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-win-3.7.9-64bit.zip",
-            "hash": "6ace99628c02ae345690183950bf76ee7aeacdaa1a3693e98a6f971642cd2da7",
-            "extract_dir": "audacity-win-3.7.9-64bit"
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.0/audacity-win-4.0.0-x86_64.msi",
+            "hash": "2aecc44d28a004d15ae7c23c099f232ba8c5b3e6b19ebdbaf7d6c596316dc5b3"
+        },
+        "arm64": {
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.0/audacity-win-4.0.0-arm64.msi",
+            "hash": "a5b222a9cf8f03cccef57c912428427eb9387f0e88fa590d9c2b1d83794b222c"
         }
     },
-    "pre_install": "Remove-Item $dir\\Languages -Recurse",
+    "extract_dir": "Audacity 4",
     "shortcuts": [
         [
-            "Audacity.exe",
+            "bin/Audacity4.exe",
             "Audacity"
         ]
     ],
@@ -27,8 +30,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/audacity/audacity/releases/download/Audacity-$version/audacity-win-$version-64bit.zip",
-                "extract_dir": "audacity-win-$version-64bit"
+                "url": "https://github.com/audacity/audacity/releases/download/Audacity-$version/audacity-win-$version-x86_64.msi"
+            },
+            "arm64": {
+                "url": "https://github.com/audacity/audacity/releases/download/Audacity-$version/audacity-win-$version-arm64.msi"
             }
         },
         "hash": {
