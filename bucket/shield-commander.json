@@ -13,7 +13,7 @@
     ],
     "checkver": {
         "url": "https://github.com/siewers/shield-commander/releases",
-        "regex": "v([\\d.]+?(-(alpha|beta|rc)))"
+        "regex": "v([\\d.]+?(-(alpha|beta|rc)[\\d.]+))"
     },
     "autoupdate": {
         "url": "https://github.com/siewers/shield-commander/releases/download/v$version/ShieldCommander-windows-x64.zip"
