@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/TASEmulators/fceux/releases/download/fceux-2.7.0/fceux-2.7.0-win64.zip",
-            "hash": "3bf29f3f7538861eabb7eda23e16d80bf273000a2082198d5ea4fdfab1745f81",
+            "hash": "f851d608fc21bc7d289d25ef92cb29ca6c96a21c3df28f82aab2a8328df1f9ff",
             "bin": "fceux64.exe",
             "shortcuts": [
                 [
