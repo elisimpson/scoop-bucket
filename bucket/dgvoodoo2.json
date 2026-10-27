@@ -1,10 +1,10 @@
 {
-    "version": "2.87.5",
+    "version": "2.87.6",
     "description": "Glide/DirectX implementation on D3D11/12",
     "homepage": "https://github.com/dege-diosg/dgVoodoo2",
     "license": "http://dege.freeweb.hu/dgVoodoo2/ReadmeGeneral/#redistributionrights",
-    "url": "https://github.com/dege-diosg/dgVoodoo2/releases/download/v2.87.5/dgVoodoo2_87_5.zip",
-    "hash": "5ffde6927f7355ca3fdd5d785b581256a8e6539fa13e395a891ade6ba1040850",
+    "url": "https://github.com/dege-diosg/dgVoodoo2/releases/download/2.87.6/dgVoodoo2_87_6.zip",
+    "hash": "9afa493396feec7108f42a2d97661eef96bbaac5addf0dfb5cfbc3001cd76a0a",
     "architecture": {
         "arm64": {
             "pre_install": "Move-Item $dir\\Cpl\\arm64\\dgVoodooCpl.exe $dir -Force"
