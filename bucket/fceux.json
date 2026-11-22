@@ -25,14 +25,11 @@
         "snaps",
         "fceux.cfg"
     ],
-    "checkver": {
-        "url": "https://github.com/TASEmulators/fceux/releases/latest",
-        "regex": "fceux-([\\d.]+)"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/TASEmulators/fceux/releases/download/fceux-$version/fceux-$version-win64.zip"
+                "url": "https://github.com/TASEmulators/fceux/releases/download/v$version/fceux-$version-win64.zip"
             }
         }
     }
