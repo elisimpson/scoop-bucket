@@ -10,6 +10,10 @@
         "64bit": {
             "url": "https://github.com/mamedev/mame/releases/download/mame0289/mame0289b_x64.exe#/dl.7z",
             "hash": "a1aa7912168c9d1b05e611906bc21b8b9be3935822aead36d12a1da363150b7d"
+        },
+        "arm64": {
+            "url": "https://github.com/mamedev/mame/releases/download/mame0289/mame0289b_arm64.exe#/dl.7z",
+            "hash": "f4cb463256c34b6772aee5bc553e770aca8204c31f1f947e849d8f8495bc6346"
         }
     },
     "pre_install": [
@@ -33,9 +37,17 @@
     ],
     "checkver": {
         "github": "https://github.com/mamedev/mame",
-        "regex": "MAME ([\\d.]+)"
+        "regex": "mame(\\d)(\\d+)",
+        "replace": "$1.$2"
     },
     "autoupdate": {
-        "url": "https://github.com/mamedev/mame/releases/download/mame$cleanVersion/mame$cleanVersionb_x64.exe#/dl.7z"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mamedev/mame/releases/download/mame$cleanVersion/mame$cleanVersionb_x64.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/mamedev/mame/releases/download/mame$cleanVersion/mame$cleanVersionb_arm64.exe#/dl.7z"
+            }
+        }
     }
 }
